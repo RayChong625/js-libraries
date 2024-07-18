@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -47,14 +52,18 @@ nav ul li a:hover {
     position: relative;
     display: flex;
     justify-content: center;
-    padding-bottom: 20px; /* Add padding to the bottom */
+    padding-bottom: 20px;
+    /* Add padding to the bottom */
 }
 
 .hero-image {
     width: 100%;
-    height: calc(100vh - 150px); /* Full height minus navbar and crop */
-    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
-    object-position: center; /* Centers the image */
+    height: calc(100vh - 150px);
+    /* Full height minus navbar and crop */
+    object-fit: cover;
+    /* Ensures the image covers the area while maintaining aspect ratio */
+    object-position: center;
+    /* Centers the image */
 }
 
 .add-to-cart {
@@ -73,6 +82,7 @@ nav ul li a:hover {
 .add-to-cart:hover {
     background-color: #e03e00;
 }
+
 /*Lightbox2*/
 body.lb-disable-scrolling {
     overflow: hidden;
@@ -161,7 +171,7 @@ body.lb-disable-scrolling {
     z-index: 10;
 }
 
-.lb-container > .nav {
+.lb-container>.nav {
     left: 0;
 }
 
@@ -170,7 +180,8 @@ body.lb-disable-scrolling {
     background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
 }
 
-.lb-prev, .lb-next {
+.lb-prev,
+.lb-next {
     height: 100%;
     cursor: pointer;
     display: block;
@@ -280,9 +291,39 @@ body.lb-disable-scrolling {
 }
 
 
+/* Slick Carousel */
 
-/*Slick*/
+.gallery-section {
+    text-align: center;
+    padding: 10px;
+}
 
+.slick {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.slick-slide {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-slide img {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+#slick-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
 
 /*footer*/
 footer {
@@ -292,10 +333,20 @@ footer {
     margin-top: 2rem;
 }
 
-/*phone screen*/
+/* Media Query and >768px */
 @media screen and (max-width: 768px) {
     nav ul li {
         display: block;
         margin-bottom: 0.5rem;
+    }
+
+    .slick-slide img {
+        max-width: 80px;
+        max-height: 100%;
+    }
+
+    .add-to-cart {
+        right: 50%;
+        transform: translateX(50%);
     }
 }

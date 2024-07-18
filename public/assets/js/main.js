@@ -11570,6 +11570,16 @@ tippy('#myBtn', {
    content: "Get 15% off, Only Today!", 
 })
 
-//Slick
+//slick
+$(document).ready(function(){
+    $('.slick').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        adaptiveHeight: true
+      });
+  });
 
-          
+
+//
