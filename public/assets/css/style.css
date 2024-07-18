@@ -325,6 +325,49 @@ body.lb-disable-scrolling {
     text-align: center;
 }
 
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form {
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    /* Add margin to ensure spacing */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+
 /*footer*/
 footer {
     background-color: #f4f4f4;
