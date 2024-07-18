@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Libraries</title>
+    <title>JS libraries</title>
+    <link href="./assets/css/style.css" rel="stylesheet" />
 </head>
+
 <body>
-    
+
+    <header>
+        <h1 class="title">Cozy Home Furniture</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-container">
+            <a class="example-image-link" href="./assets/image/sofa_per.jpg" data-lightbox="example-set"
+                data-title="Diane Sofa - Perspective View">
+                <img class="example-image hero-image" src="./assets/image/sofa_per.jpg" alt="image-1" />
+            </a>
+            <button class="add-to-cart" id="myBtn">Add to Cart</button>
+            <!-- Hidden images for Lightbox -->
+            <a class="example-image-link" href="./assets/image/sofa_side.jpg" data-lightbox="example-set"
+                data-title="Diane Sofa - Side View" style="display:none;"></a>
+            <a class="example-image-link" href="./assets/image/sofa_front.jpg" data-lightbox="example-set"
+                data-title="Diane Sofa - Front View" style="display:none;"></a>
+        </div>
+    </section>
+    <!-- Gallary-->
+
+    <footer>
+        <p>&copy; 2024 Furniture Store</p>
+    </footer>
+
+    <!--Tippy-->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script src="./assets/js/main.js"></script>
+
 </body>
+
 </html>
